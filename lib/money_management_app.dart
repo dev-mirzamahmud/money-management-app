@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:money_management_app/app/core/constants/app_constants.dart';
 import 'package:money_management_app/app/core/ui/theme/app_theme.dart';
+import 'package:money_management_app/app/routes/app_pages.dart';
 
 class MoneyManagementApp extends StatelessWidget {
   const MoneyManagementApp({super.key});
@@ -15,7 +16,8 @@ class MoneyManagementApp extends StatelessWidget {
       darkTheme: AppTheme.darkTheme,
       themeMode: ThemeMode.light,
       defaultTransition: Transition.noTransition,
-      getPages: [],
+      initialRoute: AppPages.INITIAL,
+      getPages: AppPages.pages,
     );
   }
 }
