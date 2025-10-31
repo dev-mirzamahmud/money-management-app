@@ -5,6 +5,7 @@ import 'package:money_management_app/app/features/auth/reset_password/reset_pass
 import 'package:money_management_app/app/features/auth/sign_in/sign_in_view.dart';
 import 'package:money_management_app/app/features/auth/sign_up/sign_up_view.dart';
 import 'package:money_management_app/app/features/intro/onboard/onboard_view.dart';
+import 'package:money_management_app/app/features/intro/splash/bindings/splash_binding.dart';
 import 'package:money_management_app/app/features/intro/splash/splash_view.dart';
 import 'package:money_management_app/app/routes/routes.dart';
 
@@ -13,7 +14,11 @@ class AppPages {
 
   static final pages = [
     // Initial Page
-    GetPage(name: Routes.splash, page: () => const SplashView()),
+    GetPage(
+      name: Routes.splash,
+      page: () => const SplashView(),
+      binding: SplashBinding(),
+    ),
 
     // OnBoarding Page
     GetPage(name: Routes.onBoarding, page: () => const OnboardView()),
