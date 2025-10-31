@@ -11,5 +11,6 @@ class LightThemeConfig {
     colorScheme: TColorScheme.lightColorScheme,
     appBarTheme: TAppbar.lightAppBarTheme,
     primaryTextTheme: TPrimaryText.lightPrimaryTextTheme,
+    inputDecorationTheme: InputDecorationThemeData(),
   );
 }
