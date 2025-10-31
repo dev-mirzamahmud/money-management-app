@@ -13,4 +13,16 @@ class TColorScheme {
     error: AppColors.LIGHT_ERROR_COLOR,
     onError: AppColors.LIGHT_TEXT_PRIMARY_COLOR,
   );
+
+  static final ColorScheme darkColorScheme = ColorScheme.light(
+    primary: AppColors.DARK_PRIMARY_COLOR,
+    onPrimary: AppColors.DARK_SURFACE_COLOR,
+    secondary: AppColors.DARK_SECONDARY_COLOR,
+    onSecondary: AppColors.DARK_TEXT_SECONDARY_COLOR,
+    surface: AppColors.DARK_SURFACE_COLOR,
+    onSurface: AppColors.DARK_TEXT_PRIMARY_COLOR,
+    onSurfaceVariant: AppColors.DARK_TEXT_SECONDARY_COLOR,
+    error: AppColors.DARK_ERROR_COLOR,
+    onError: AppColors.DARK_TEXT_PRIMARY_COLOR,
+  );
 }
